@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.seanma.inclassassignment09_zhenzhenm.EditActivity">
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:stretchColumns="1">
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp">
+
+            <TextView
+                android:text="Name:"
+                android:textSize="20sp"
+                android:layout_marginRight="10dp"/>
+
+            <EditText
+                android:id="@+id/editName"
+                android:inputType="text" />
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp">
+
+            <TextView
+                android:text="Age:"
+                android:textSize="20sp"
+                android:layout_marginRight="10dp"/>
+
+            <EditText
+                android:id="@+id/editAge"
+                android:inputType="number" />
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:text="Gender:"
+                android:textSize="20sp"
+                android:layout_marginRight="10dp"/>
+
+            <RadioGroup>
+
+                <RadioButton
+                    android:id="@+id/female"
+                    android:text="Female"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:onClick="genderClick" />
+
+                <RadioButton
+                    android:id="@+id/male"
+                    android:text="Male"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:onClick="genderClick" />
+
+                <RadioButton
+                    android:id="@+id/other"
+                    android:text="Other"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:onClick="genderClick" />
+
+            </RadioGroup>
+
+        </TableRow>
+
+    </TableLayout>
+
+</LinearLayout>
